@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-body: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #0f172a;
+    background-color: #f8fafc;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  p, span, li, label, input, select, textarea, td, th {
+    font-family: var(--font-body);
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sub {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.font-mono-num,
+.font-mono-num * {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  aside,
+  header,
+  .no-print {
+    display: none !important;
+  }
+
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body {
+    background: #ffffff !important;
+  }
+}

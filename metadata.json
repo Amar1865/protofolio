@@ -1,0 +1,6 @@
+{
+  "name": "Personal Investment Portfolio Manager",
+  "description": "A full-stack portfolio management platform for individual investors to track stocks, mutual funds, and other assets with automated valuation, profit and loss analysis, portfolio allocation charts, and downloadable reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
